@@ -16,35 +16,41 @@
   </head>
   <body
     class="font-outfit flex flex-col justify-center items-center min-h-screen bg-very-dark-blue-main px-8">
-    <main class="card-container">
+    <main>
       <article
-        class="card bg-very-dark-blue-card text-white rounded-xl p-6 md:max-w-md lg:max-w-md">
-        <div class="card-header rounded-xl">
+        class="bg-very-dark-blue-card text-white rounded-xl p-6 md:max-w-md lg:max-w-md">
+        <div class="relative group">
           <img
             src="./images/image-equilibrium.jpg"
             alt="image of an NFT"
-            class="rounded-xl" />
+            class="rounded-lg w-full h-auto" />
+          <div
+            class="absolute inset-0 bg-cyan opacity-0 group-hover:opacity-70 rounded-lg flex justify-center items-center transition-opacity duration-300 hover:cursor-pointer">
+            <img
+              src="./images/icon-view.svg"
+              alt="view icon"
+              class="opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          </div>
         </div>
 
-        <div class="card-body flex flex-col mt-7">
+        <div class="flex flex-col mt-7 pb-5 border-b border-white">
           <h1
-            class="card-title text-xl font-medium hover:text-cyan hover:cursor-pointer md:text-2xl">
+            class="text-xl font-medium hover:text-cyan hover:cursor-pointer md:text-2xl">
             Equilibrium #3429
           </h1>
-          <p
-            class="card-description text-base font-extralight text-soft-blue mt-2 md:text-lg">
+          <p class="text-base font-extralight text-soft-blue mt-2 md:text-lg">
             Our Equilibrium collection promotes balance and calm.
           </p>
 
-          <div class="card-price flex flex-row justify-between mt-5">
-            <div class="price flex flex-row items-center gap-2">
+          <div class="flex flex-row justify-between mt-5">
+            <div class="flex flex-row items-center gap-2">
               <img
                 src="./images/icon-ethereum.svg"
                 alt="ethereum icon"
                 class="object-cover w-3 md:w-5" />
               <p class="text-cyan md:text-lg">0.041 ETH</p>
             </div>
-            <div class="time-left flex flex-row items-center gap-2">
+            <div class="flex flex-row items-center gap-2">
               <img
                 src="./images/icon-clock.svg"
                 alt="clock icon"
@@ -54,9 +60,12 @@
           </div>
         </div>
 
-        <div class="card-footer flex items-center gap-4 mt-8">
-          <div class="img-avatar w-8 md:w-12">
-            <img src="./images/image-avatar.png" alt="avatar image" />
+        <div class="flex items-center gap-4 mt-8">
+          <div class="w-8 md:w-12">
+            <img
+              src="./images/image-avatar.png"
+              alt="avatar image"
+              class="border border-white rounded-full" />
           </div>
           <p class="text-soft-blue font-extralight md:text-lg">
             Creation of
