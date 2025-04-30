@@ -17,50 +17,69 @@
   <body
     class="font-outfit flex flex-col justify-center items-center min-h-screen bg-very-dark-blue-main px-8">
     <main class="card-container">
-      <article class="card bg-very-dark-blue-card text-white rounded-xl p-6">
-        <div class="card-header">
-          <img src="./images/image-equilibrium.jpg" alt="image of an NFT" />
+      <article
+        class="card bg-very-dark-blue-card text-white rounded-xl p-6 md:max-w-md lg:max-w-md">
+        <div class="card-header rounded-xl">
+          <img
+            src="./images/image-equilibrium.jpg"
+            alt="image of an NFT"
+            class="rounded-xl" />
         </div>
 
-        <div class="card-body">
-          <h1 class="card-title">Equilibrium #3429</h1>
-          <p class="card-description">
+        <div class="card-body flex flex-col mt-7">
+          <h1
+            class="card-title text-xl font-medium hover:text-cyan hover:cursor-pointer md:text-2xl">
+            Equilibrium #3429
+          </h1>
+          <p
+            class="card-description text-base font-extralight text-soft-blue mt-2 md:text-lg">
             Our Equilibrium collection promotes balance and calm.
           </p>
 
-          <div class="card-price">
-            <div class="price">
-              <img src="./images/icon-ethereum.svg" alt="ethereum icon" />
-              <p>0.041 ETH</p>
+          <div class="card-price flex flex-row justify-between mt-5">
+            <div class="price flex flex-row items-center gap-2">
+              <img
+                src="./images/icon-ethereum.svg"
+                alt="ethereum icon"
+                class="object-cover w-3 md:w-5" />
+              <p class="text-cyan md:text-lg">0.041 ETH</p>
             </div>
-            <div class="time-left">
-              <img src="./images/icon-clock.svg" alt="clock icon" />
-              <p>3 days left</p>
+            <div class="time-left flex flex-row items-center gap-2">
+              <img
+                src="./images/icon-clock.svg"
+                alt="clock icon"
+                class="object-cover w-5 md:w-9" />
+              <p class="md:text-lg">3 days left</p>
             </div>
           </div>
         </div>
 
-        <div class="card-footer">
-          <div class="img-avatar">
+        <div class="card-footer flex items-center gap-4 mt-8">
+          <div class="img-avatar w-8 md:w-12">
             <img src="./images/image-avatar.png" alt="avatar image" />
           </div>
-          <p>Creation of Jules Wyvern</p>
+          <p class="text-soft-blue font-extralight md:text-lg">
+            Creation of
+            <span class="text-white hover:cursor-pointer hover:text-cyan"
+              >Jules Wyvern</span
+            >
+          </p>
         </div>
       </article>
     </main>
 
-    <footer class="text-center text-sm">
-      <p>
+    <footer class="text-center text-sm text-white mt-5 font-light">
+      <p class="font-extralight">
         Challenge by
         <a
           href="https://www.frontendmentor.io?ref=challenge"
           target="_blank"
-          class="text-blue-footer"
+          class="text-blue-footer font-normal hover:font-bold"
           >Frontend Mentor</a
         >. Coded by
         <a
           href="https://www.linkedin.com/in/muhammad-fachrezi-barus/"
-          class="text-blue-footer"
+          class="text-blue-footer font-normal hover:font-bold"
           >Fachrezi</a
         >.
       </p>
